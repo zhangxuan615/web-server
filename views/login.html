@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="/css/signin.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <a href="/">
+                <img class="mb-4" src="/img/bootstrap-solid.svg" alt="" width="72" height="72">
+            </a>
+            <h1>用户登录</h1>
+        </div>
+        <form id="login_form" action='/login' method="POST">
+            <div class="form-group">
+                <label for="inputText">用户名：</label>
+                <input id="inputText" type="text" class="form-control" name="username" placeholder="Username" required
+                    autofocus>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword">密码：</label>
+                <a class="float-right" href="">忘记密码？</a>
+                <input id='inputPassword' type="password" class="form-control" name="password" placeholder="Password"
+                    required>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">记住我
+                </label>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">登录</button>
+        </form>
+        <div class="message">
+            <p>没有账号? <a href="/register">点击创建</a>.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
